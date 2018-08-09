@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba Kibernum</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col"><h1>Busqueda de Productos</h1></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 form-group">
+				<label for="keyword">Ingresa Nombre Producto</label>
+				<input type="search" name="keyword" id="keyword" placeholder="keyword" class="form-control" data-attribute="keyword">
+			</div>
+			<div class="col-md-12">
+				<button class="search btn btn-primary" data-button="search">Buscar</button>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-button="estadisticas">Estadistica</button>
+			</div>
+			<div class="col-md-12" data-model="resultado">
+				<table class="table table-responsive">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Producto</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="estadisticas" tabindex="-1" role="dialog" data-modal="estadisticas" aria-labelledby="estadisticas" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Estadisticas</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" data-modal="tablaresumen">
+					<table class="table table-responsive">
+						<thead>
+							<tr>
+								<th>Producto</th>
+								<th>Palabras</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
